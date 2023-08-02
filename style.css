@@ -1,0 +1,389 @@
+
+  .small {
+    font-size: 18px; }
+  
+  .smaller {
+    font-size: 16px; }
+  
+  .smallest {
+    font-size: 14px; }
+  
+  .pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5; }
+  
+  .quick {
+    -webkit-animation: pulsate 2s ease-in;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.95; }
+  
+  @-webkit-keyframes pulsate {
+    0% {
+      opacity: 0.2; }
+    50% {
+      opacity: 1.0; }
+    100% {
+      opacity: 0.2; } }
+  @-webkit-keyframes quick {
+    0% {
+      opacity: 1.0; }
+    50% {
+      opacity: 0.9; } }
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(0.9, 0.9);
+      opacity: 0.21; }
+    50% {
+      -webkit-transform: scale(1.05, 1.05);
+      opacity: 1.0; }
+    100% {
+      -webkit-transform: scale(1, 1);
+      opacity: 1.0; } }
+  .pulse {
+    -webkit-animation: pulse 1s ease-out;
+    -webkit-animation-iteration-count: 1; }
+  
+  .divTable {
+    display: table;
+    /*width: 100%;*/ }
+  
+  .divTableRow {
+    display: table-row; }
+  
+  .divTableHeading {
+    background-color: #EEE;
+    display: table-header-group; }
+  
+  .divTableCell,
+  .divTableHead {
+    border: 1px solid #F5DEB3;
+    display: table-cell;
+    padding: 3px 10px;
+    font-family: "Futura", arial, "PT Sans";
+    color: #073642; }
+  
+  .divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+    font-weight: bold; }
+  
+  .divTableFoot {
+    background-color: #EEE;
+    display: table-footer-group;
+    font-weight: bold; }
+  
+  .divTableBody {
+    display: table-row-group; }
+  
+  .divPerson {
+    background-color: sandybrown;
+    font-family: "Futura", arial, "PT Sans";
+    color: #073642;
+    font-size: 16px; }
+  
+  .divHeader {
+    background-color: orange;
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 16px; }
+  
+  .divVerticalHeader {
+    background-color: sandybrown;
+    color: #073642;
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 16px; }
+  
+  .divRussianCell {
+    font-family: Georgia, "PT Serif", "Times New Roman", serif;
+    font-size: 16px;
+    background-color: #FFEFD5; }
+  
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  
+  .tg td {
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F5DEB3;
+    overflow: hidden;
+    word-break: normal; }
+  
+  .tg th {
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F5DEB3;
+    overflow: hidden;
+    word-break: normal; }
+  
+  .tg .tdRussian {
+    font-size: 18px;
+    font-family: Georgia, "PT Serif", "Times New Roman", serif;
+    background-color: #FFEFD5;
+    vertical-align: top; }
+  
+  .tg .thHeader {
+    background-color: orange;
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 16px;
+    color: #073642; }
+  
+  .tg .tdVerticalHeader {
+    background-color: sandybrown;
+    color: #073642;
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 16px; }
+  
+  @media screen and (max-width: 480px) {
+    .divPerson {
+      font-size: 12px; }
+  
+    .divHeader {
+      font-size: 12px; }
+  
+    .divVerticalHeader {
+      font-size: 12px; }
+  
+    .divRussianCell {
+      font-family: "Futura", arial, "PT Sans";
+      font-size: 12px; }
+  
+    .tg .tdVerticalHeader {
+      font-size: 12px; }
+  
+    .tg .thHeader {
+      font-size: 12px; }
+  
+    .tg .tdRussian {
+      font-size: 16px; } }
+  a {
+    -webkit-transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -ms-transition: color .4s linear;
+    -o-transition: color .4s linear;
+    transition: color .4s linear;
+    color: #265C83; }
+  
+  a:link,
+  a:visited {
+    color: #265C83; }
+  
+  a:hover {
+    color: #7FDBFF; }
+  
+  a:active {
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+    color: #007BE6; }
+  
+  .link {
+    text-decoration: none; }
+  
+  a.wordInfo {
+    color: #cb4b16;
+    -webkit-transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -ms-transition: color .4s linear;
+    -o-transition: color .4s linear;
+    transition: color .4s linear;
+    text-decoration: none;
+    opacity: 1.0; }
+  
+  a.wordInfo:hover {
+    color: #ed855a;
+    text-decoration: underline; }
+  
+  a.wordInfo:active {
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear; }
+  
+  a.wordInfoAnswer {
+    color: #2aa198;
+    -webkit-transition: color .4s linear;
+    -moz-transition: color .4s linear;
+    -ms-transition: color .4s linear;
+    -o-transition: color .4s linear;
+    transition: color .4s linear;
+    text-decoration: none;
+    opacity: 1.0; }
+  
+  a.wordInfoAnswer:hover {
+    color: #15504c;
+    text-decoration: underline; }
+  
+  a.wordInfoAnswer:active {
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear; }
+  
+  a.hint {
+    text-decoration: none !important;
+    font-size: 15px;
+    text-transform: uppercase; }
+  
+  a.hint:visited,
+  a.hint:link {
+    color: #b5542d; }
+  
+  a.hint:hover {
+    color: #50362b; }
+  
+
+    .tone-1 {
+        color: #f63;
+    }
+    .tone-2 {
+        color: #3e9;
+    }
+    .tone-3 {
+        color: #39f;
+    }
+    .tone-4 {
+        color: #c6f;
+    }
+    .tone-5 {
+        color: #ddd;
+    }
+
+ruby {
+	font-size: 28px;
+}
+
+ruby rt {
+  font-family: Georgia, "PT Serif", "Times New Roman", serif;
+  font-weight: bold; 
+}
+
+.question {
+	font-size: 28px;
+ }
+
+.answer {
+  color: #2aa198; }
+  
+  .serif {
+    font-family: Georgia, "PT Serif", "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: bold; }
+  
+  .english {
+    font-size: 24px;
+    font-weight: bold; }
+  
+  .rusentence {
+    font-family: "PT Serif", "Times New Roman";
+    font-size: 18px;
+    font-weight: bold;
+    color: #586e75; }
+  
+  .ensentence {
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 18px;
+    font-style: italic;
+    color: #839496; }
+  
+  h1 {
+    position: relative;
+    margin-top: 20px;
+    color: #839496; }
+  
+  h1.one {
+    margin-top: 0;
+    font-size: 14px; }
+  
+  h1.one:before {
+    content: "";
+    display: block;
+    border-top: solid 1px #93a1a1;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1; }
+  
+  h1.one span {
+    color: #93a1a1;
+    background: #eee8d5;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5; }
+  
+  hr.style4 {
+    border-top: 1px dotted #93a1a1; }
+  
+  div.notes {
+    font-size: 16px;
+    text-align: left;
+    color: #839496; }
+  
+  li ul {
+    font-family: "Futura", arial, "PT Sans";
+    color: #839496;
+    text-align: left; }
+  
+  .serifcode {
+    font-family: Georgia, "PT Serif", "Times New Roman", serif;
+    font-weight: 600;
+    color: #d16d43; }
+  
+  .myCodeClass {
+    font-family: Georgia, "PT Serif", "Times New Roman", serif;
+    font-weight: 600;
+    color: #d16d43; }
+  
+  .orange_button .replaybutton span svg {
+    fill: #cb4b16; }
+  
+  .green_button .replaybutton span svg {
+    fill: #859a01; }
+  
+  .replaybutton span svg {
+    stroke: none;
+    fill: #859a01;
+    display: inline;
+    height: 1em;
+    width: 1em;
+    min-width: 12px;
+    min-height: 12px; }
+  
+  .hint {
+    color: #88a8a6;
+    font-family: Georgia, "PT Serif", "Times New Roman", serif;
+    font-size: 18px; }
+  
+  .tags {
+    color: #619fca;
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 14px; }
+  
+  /*
+  * === DEFAULT CARD FORMATTING ===
+  */
+  .card {
+    font-family: "Futura", arial, "PT Sans";
+    font-size: 20px;
+    text-align: center;
+    color: #073642;
+    background: #eee8d5; }
+  
+  @media screen and (max-width: 480px) {
+    .serif {
+      font-size: 24px; }
+  
+    .english {
+      font-size: 20px; } }
