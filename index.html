@@ -80,22 +80,6 @@
       }
     }
   </style>
-  <script>
-    let setupBlankFrame = () => {
-      debugger;
-      blankframe.onload = () => {
-        debugger;
-        const doc = blankframe.contentWindow.document,
-        head = doc.querySelector('head'),
-        style = doc.createElement('style');
-        
-        style.setAttribute('type', 'text/css');
-        style.innerHTML = 'body { background: transparent!important; }';
-        
-        head.appendChild(style);
-      };
-    };
-  </script>
 </head>
 
 <body>
