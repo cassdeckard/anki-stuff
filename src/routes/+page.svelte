@@ -26,18 +26,11 @@
 		  </svg>
 		</a>
 	  </div>
-	  <iframe src="./card-preview.html" id="preview-panel"></iframe>
+	  <iframe src="./card-preview.html" id="preview-panel" title="Card preview"></iframe>
 	  <textarea id="source-panel"></textarea>
 </section>
 
 <style>
-    body {
-      display: flex;
-      margin: 0;
-      height: 100vh;
-      overflow: hidden;
-    }
-
     iframe#preview-panel {
       border: none;
       padding: 2%;
