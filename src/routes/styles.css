@@ -114,9 +114,9 @@ button:focus:not(:focus-visible) {
 div.github-corner-block {
 	display: block;
 	height: 80px;
-	}
+}
 	
-	.github-corner svg {
+.github-corner svg {
 	fill: #ecdbcc;
 	color: #151513;
 	position: absolute;
@@ -124,83 +124,81 @@ div.github-corner-block {
 	border: 0;
 	left: 0;
 	transform: scale(-1, 1);
-	}
-	
-	.github-corner:hover .octo-arm {
+}
+
+.github-corner:hover .octo-arm {
 	animation: octocat-wave 560ms ease-in-out
-	}
-	
-	@keyframes octocat-wave {
-	
+}
+
+@keyframes octocat-wave {
 	0%,
 	100% {
 		transform: rotate(0)
 	}
-	
+
 	20%,
 	60% {
 		transform: rotate(-25deg)
 	}
-	
+
 	40%,
 	80% {
 		transform: rotate(10deg)
-	}
-	}
-	
-	@media (max-width:500px) {
-	.github-corner:hover .octo-arm {
-		animation: none
-	}
-	
-	.github-corner .octo-arm {
-		animation: octocat-wave 560ms ease-in-out
 	}
 }
 
-/* GitHub Corner SVG link stuff */
-div.github-corner-block {
-		display: block;
-		height: 80px;
-	}
-	
-	.github-corner svg {
-		fill: #ecdbcc;
-		color: #151513;
-		position: absolute;
-		top: 0;
-		border: 0;
-		left: 0;
-		transform: scale(-1, 1);
-	}
-	
+@media (max-width:500px) {
 	.github-corner:hover .octo-arm {
+		animation: none
+	}
+
+	.github-corner .octo-arm {
 		animation: octocat-wave 560ms ease-in-out
 	}
-	
-	@keyframes octocat-wave {
-	
+	}
+
+/* GitHub Corner SVG link stuff */
+div.github-corner-block {
+	display: block;
+	height: 80px;
+}
+
+.github-corner svg {
+	fill: #ecdbcc;
+	color: #151513;
+	position: absolute;
+	top: 0;
+	border: 0;
+	left: 0;
+	transform: scale(-1, 1);
+}
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
 	0%,
 	100% {
 		transform: rotate(0)
 	}
-	
+
 	20%,
 	60% {
 		transform: rotate(-25deg)
 	}
-	
+
 	40%,
 	80% {
 		transform: rotate(10deg)
 	}
-	}
-	
-	@media (max-width:500px) {
+}
+
+@media (max-width:500px) {
 	.github-corner:hover .octo-arm {
 		animation: none
 	}
-	
+
 	.github-corner .octo-arm {
 		animation: octocat-wave 560ms ease-in-out
 	}
