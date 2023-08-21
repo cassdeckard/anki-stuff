@@ -5,9 +5,8 @@
 </script>
 
 <svelte:head>
-	<meta charset="utf-8">
-	<meta name="color-scheme" content="dark">
 	<title>Anki Playground</title>
+	<meta name="color-scheme" content="dark">
 	<meta name="description" content="Anki playground" />
 </svelte:head>
 
