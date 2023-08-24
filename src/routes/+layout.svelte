@@ -9,7 +9,7 @@
 	</main>
 
 	<footer>
-		
+		made with <a href="https://kit.svelte.dev/">SvelteKit</a>
 	</footer>
 </div>
 

@@ -1,4 +1,4 @@
-<html dir="ltr" hascustombackground="false" lang="en"
+export let defaultCardSource = `<html dir="ltr" hascustombackground="false" lang="en"
   class="webkit chrome chrome108 mac mac10 mac10_15 js night-mode retina orientation_landscape maxw_1920">
 
 <head>
@@ -77,4 +77,4 @@
   </div>
 </body>
 
-</html>
+</html>`;

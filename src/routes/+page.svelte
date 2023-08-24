@@ -2,6 +2,7 @@
 	// import Counter from './Counter.svelte';
 	// import welcome from '$lib/images/svelte-welcome.webp';
 	// import welcome_fallback from '$lib/images/svelte-welcome.png';
+  export let data;
 </script>
 
 <svelte:head>
@@ -11,8 +12,8 @@
 </svelte:head>
 
 <section>
-	  <iframe src="./card-preview.html" id="preview-panel" title="Card preview"></iframe>
-	  <textarea id="source-panel"></textarea>
+	  <iframe srcdoc={data.card.source} id="preview-panel" title="Card preview"></iframe>
+	  <textarea id="source-panel">{data.card.source}</textarea>
 </section>
 
 <style>
