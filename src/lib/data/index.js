@@ -3,9 +3,6 @@ export let defaultCardSource = `<html dir="ltr" hascustombackground="false" lang
 
 <head>
   <meta charset="utf-8">
-  <meta name="color-scheme" content="light dark">
-  <title>Anki Playground</title>
-  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cassdeckard/anki-stuff@main/_anki/css/webview.css">
   <style>
     body {
@@ -71,8 +68,7 @@ export let defaultCardSource = `<html dir="ltr" hascustombackground="false" lang
         <p>the nurse checked his temperature every few hours </p>
       </div>
       <plecoentry c="00000000" d="504f3245" e="2aacbb00" x="12"></plecoentry>
-      <br\>
-      </br\>
+      <br/>
     </div>
   </div>
 </body>
