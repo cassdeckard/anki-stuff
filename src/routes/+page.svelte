@@ -7,6 +7,10 @@
   const cardLayout = writable();
   $: cardLayout.set(data.cardLayout);
   setContext('cardLayout', cardLayout);
+
+  const layoutCard = (layout) => {
+    return layout.template.replace(`{{BODY}}`, layout.body);
+  };
 </script>
 
 <svelte:head>
@@ -16,8 +20,8 @@
 </svelte:head>
 
 <section>
-	  <iframe srcdoc={$cardLayout.source} id="preview-panel" title="Card preview"></iframe>
-	  <textarea id="source-panel" bind:value={$cardLayout.source}></textarea>
+	  <iframe srcdoc={layoutCard($cardLayout)} id="preview-panel" title="Card preview"></iframe>
+	  <textarea id="source-panel" bind:value={$cardLayout.body}></textarea>
 </section>
 
 <style>

@@ -327,6 +327,7 @@ ruby rt {
     border-top: 1px dotted #93a1a1; }
   
   div.notes {
+    margin: 16px;
     font-size: 16px;
     text-align: left;
     color: #839496; }

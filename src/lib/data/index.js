@@ -1,4 +1,37 @@
-export let defaultCardSource = `<html dir="ltr" hascustombackground="false" lang="en"
+let defaultCardSourceBody = `<body class="card card1 isMac nightMode night_mode macos-dark-mode fancy">
+<div id="qa" style="opacity: 1;">
+  <style>
+    @import "https://cdn.jsdelivr.net/gh/cassdeckard/anki-stuff@main/style.css";
+  </style>
+  <div class="notes">
+    这是什么意思?
+  </div>
+  <div class="question">
+    <ruby>护士<rt>hù shi</rt></ruby>
+    <ruby>每隔<rt>měi gé</rt></ruby>
+    <ruby>几<rt>jǐ</rt></ruby>
+    <ruby>小时<rt>xiǎo shí</rt></ruby>
+    <ruby>就<rt>jiù</rt></ruby>
+    <ruby>为<rt>wéi</rt></ruby>
+    <ruby>他<rt>tā</rt></ruby>
+    <ruby>量<rt>liàng</rt></ruby>
+    <ruby>一次<rt>yī cì</rt></ruby>
+    <ruby>体温<rt>tǐ wēn</rt></ruby>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/cassdeckard/anki-stuff@main/color-pinyin-ruby.js"></script>
+  <hr id="answer">
+  <div class="answer">
+    <div align="left">
+      <p>the nurse checked his temperature every few hours </p>
+    </div>
+    <plecoentry c="00000000" d="504f3245" e="2aacbb00" x="12"></plecoentry>
+    <br/>
+  </div>
+</div>
+</body>`;
+
+let defaultCardSourceTemplate = `<html dir="ltr" hascustombackground="false" lang="en"
   class="webkit chrome chrome108 mac mac10 mac10_15 js night-mode retina orientation_landscape maxw_1920">
 
 <head>
@@ -40,37 +73,11 @@ export let defaultCardSource = `<html dir="ltr" hascustombackground="false" lang
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cassdeckard/anki-stuff@main/_anki/css/reviewer.css">
 </head>
 
-<body class="card card1 isMac nightMode night_mode macos-dark-mode fancy">
-  <div id="qa" style="opacity: 1;">
-    <style>
-      @import "https://cdn.jsdelivr.net/gh/cassdeckard/anki-stuff@main/style.css";
-    </style>
-    <div class="notes">
-      这是什么意思?
-    </div>
-    <div class="question">
-      <ruby>护士<rt>hù shi</rt></ruby>
-      <ruby>每隔<rt>měi gé</rt></ruby>
-      <ruby>几<rt>jǐ</rt></ruby>
-      <ruby>小时<rt>xiǎo shí</rt></ruby>
-      <ruby>就<rt>jiù</rt></ruby>
-      <ruby>为<rt>wéi</rt></ruby>
-      <ruby>他<rt>tā</rt></ruby>
-      <ruby>量<rt>liàng</rt></ruby>
-      <ruby>一次<rt>yī cì</rt></ruby>
-      <ruby>体温<rt>tǐ wēn</rt></ruby>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/gh/cassdeckard/anki-stuff@main/color-pinyin-ruby.js"></script>
-    <hr id="answer">
-    <div class="answer">
-      <div align="left">
-        <p>the nurse checked his temperature every few hours </p>
-      </div>
-      <plecoentry c="00000000" d="504f3245" e="2aacbb00" x="12"></plecoentry>
-      <br/>
-    </div>
-  </div>
-</body>
+{{BODY}}
 
 </html>`;
+
+export let defaultCardSource = {
+  template: defaultCardSourceTemplate,
+  body: defaultCardSourceBody
+};
