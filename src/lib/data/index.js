@@ -1,7 +1,7 @@
 let defaultCardSourceBody = `<body class="card card1 isMac nightMode night_mode macos-dark-mode fancy">
 <div id="qa" style="opacity: 1;">
   <style>
-    @import "/style.css";
+    @import "style.css";
   </style>
   <div class="notes">
     这是什么意思?
@@ -19,7 +19,7 @@ let defaultCardSourceBody = `<body class="card card1 isMac nightMode night_mode 
     <ruby>体温<rt>tǐ wēn</rt></ruby>
   </div>
 
-  <script src="/color-pinyin-ruby.js"></script>
+  <script src="color-pinyin-ruby.js"></script>
   <hr id="answer">
   <div class="answer">
     <div align="left">
@@ -36,7 +36,7 @@ let defaultCardSourceTemplate = `<html dir="ltr" hascustombackground="false" lan
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/_anki/css/webview.css">
+  <link rel="stylesheet" type="text/css" href="_anki/css/webview.css">
   <style>
     body {
       zoom: 1;
@@ -70,7 +70,7 @@ let defaultCardSourceTemplate = `<html dir="ltr" hascustombackground="false" lan
       --canvas: #2c2c2c
     }
   </style>
-  <link rel="stylesheet" type="text/css" href="/_anki/css/reviewer.css">
+  <link rel="stylesheet" type="text/css" href="_anki/css/reviewer.css">
 </head>
 
 {{BODY}}
