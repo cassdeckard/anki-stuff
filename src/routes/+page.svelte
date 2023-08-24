@@ -1,8 +1,12 @@
 <script>
-	// import Counter from './Counter.svelte';
-	// import welcome from '$lib/images/svelte-welcome.webp';
-	// import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import { setContext } from 'svelte';
+	import { writable } from 'svelte/store';
+
   export let data;
+
+  const cardLayout = writable();
+  $: cardLayout.set(data.cardLayout);
+  setContext('cardLayout', cardLayout);
 </script>
 
 <svelte:head>
@@ -12,8 +16,8 @@
 </svelte:head>
 
 <section>
-	  <iframe srcdoc={data.card.source} id="preview-panel" title="Card preview"></iframe>
-	  <textarea id="source-panel">{data.card.source}</textarea>
+	  <iframe srcdoc={$cardLayout.source} id="preview-panel" title="Card preview"></iframe>
+	  <textarea id="source-panel" bind:value={$cardLayout.source}></textarea>
 </section>
 
 <style>
